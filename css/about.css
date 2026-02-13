@@ -481,22 +481,23 @@ a {
   .mission-content {
     max-width: none;
   }
- .mission-images, .about-images{
+  .mission-images,
+  .about-images {
     margin-top: 24px;
   }
-  .about-images{
+  .about-images {
     max-width: 100%;
     height: 100%;
   }
 
   .about-images > img:first-child {
     width: 50%;
-    max-width:none;
+    max-width: none;
     height: 100%;
   }
 
   .about-images > img:last-child {
-    width:50%;
+    width: 50%;
     max-width: none;
     max-height: none;
     height: 100%;
@@ -579,8 +580,30 @@ a {
   .paragraph {
     font-size: 14px;
   }
+
+  .mission-images {
+    display: flex;
+    position: static;
+  }
+
+  .mission-images > img {
+    position: static !important;
+    width: 48% !important;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .mission-images > img:first-child {
+    margin-right: 4%;
+  }
+
   .mission-images > img:last-child {
-    display: none;
+    border: none;
+  }
+
+  .mission-content {
+    margin-left: 0;
+    margin-top: 30px;
   }
 
   .about-section {
@@ -589,7 +612,8 @@ a {
   .mission-section {
     padding: 0 0 70px;
   }
-  .mission-images, .about-images{
+  .mission-images,
+  .about-images {
     margin-top: 24px;
   }
   .footer-section {

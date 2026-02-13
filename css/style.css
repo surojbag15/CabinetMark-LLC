@@ -692,8 +692,31 @@ a {
   .primary-btn img {
     display: none;
   }
+
+
+  .success-images {
+    display: flex;
+    position: static;
+  }
+
+  .success-images > img {
+    position: static !important;
+    width: 48% !important;
+    height: 100%;        
+    object-fit: cover;   
+  }
+
+  .success-images > img:first-child {
+    margin-right: 4%;
+  }
+
   .success-images > img:last-child {
-    display: none;
+    border: none;
+  }
+
+  .mission-content {
+    margin-left: 0;
+    margin-top: 30px;
   }
 
   .offer-section .row > div:not(:first-child) {
